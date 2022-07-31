@@ -19,6 +19,8 @@ let timerId;
 let selectedDate;
 let date;
 
+console.log(date)
+
 
 const options = {
   enableTime: true,
@@ -28,7 +30,9 @@ const options = {
     onClose(selectedDates) {    
 
     date = new Date();
-    selectedDate = selectedDates[0];
+        selectedDate = selectedDates[0];
+        
+        console.log(date)
 
     if (date >= selectedDate) {
         Notiflix.Notify.failure('Please choose a date in the future');
@@ -41,10 +45,10 @@ flatpickr(refs.input, options);
 
 function startTimer() {
     timerId = setInterval(() => {
-        
-        const currentDate = selectedDate - new Date();
-        const timeValue = convertMs(currentDate);
-
+        const date = selectedDate - new Date();
+        // const currentDate = selectedDate - new Date();
+        // const timeValue = convertMs(currentDate);
+        const timeValue = convertMs(date);
         refs.days.textContent = addLeadingZero(timeValue.days);
         refs.hours.textContent = addLeadingZero(timeValue.hours);
         refs.minutes.textContent = addLeadingZero(timeValue.minutes);
