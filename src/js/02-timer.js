@@ -1,5 +1,3 @@
-
-
 import Notiflix from 'notiflix';
 
 import flatpickr from "flatpickr";
@@ -18,6 +16,8 @@ refs.btnStart.disabled = true;
 refs.btnStart.addEventListener('click', startTimer)
 
 let timerId;
+let selectedDate;
+
 
 
 const options = {
