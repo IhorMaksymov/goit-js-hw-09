@@ -17,7 +17,7 @@ refs.btnStart.addEventListener('click', startTimer)
 
 let timerId;
 let selectedDate;
-
+let date;
 
 
 const options = {
