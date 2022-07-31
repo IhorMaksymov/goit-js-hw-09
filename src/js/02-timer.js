@@ -37,7 +37,7 @@ const options = {
     };
     },
 };
-flatpickr("#datetime-picker", options);
+flatpickr(refs.input, options);
 
 function startTimer() {
     timerId = setInterval(() => {
