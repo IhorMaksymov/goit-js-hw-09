@@ -1,2 +1,0 @@
-const t={wrapp:document.querySelector("body"),btnStart:document.querySelector("[data-start]"),btnStop:document.querySelector("[data-stop]")};t.btnStart.addEventListener("click",(()=>{timerEve=setInterval((()=>{t.wrapp.style.backgroundColor=`#${Math.floor(16777215*Math.random()).toString(16)}`}),1e3),t.btnStart.disabled=!0})),t.btnStop.addEventListener("click",(()=>{t.btnStart.disabled=!1,clearInterval(timerEve)}));
-//# sourceMappingURL=01-color-switcher.b8778ef2.js.map
