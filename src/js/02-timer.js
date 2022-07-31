@@ -1,4 +1,4 @@
-const flatpickr = require("flatpickr");
+
 
 import Notiflix from 'notiflix';
 
